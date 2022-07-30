@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'user_profile.apps.UserProfileConfig',
     'appointment.apps.AppointmentConfig',
+    'mpesa',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
