@@ -3,7 +3,7 @@
 {% load bootstrap3 %}
 
 {% block content %}
-<div class="row">
+<div class="row" >
     <div class="col-md-5">
         <h3>Individuals' Outstandings</h3>
         <div class="card card-body">
@@ -19,6 +19,7 @@
                     <td>{{ obj.patient }}</td>
                     <td>{{ obj.outstanding }}</td>
                     <td>{{ obj.paid }}</td>
+                    <td>{{ obj.reminder }}</td>
                     <td><button class="btn btn-primary">Set Reminder</button></td>
                 </tr>
                 {% endfor %}
@@ -43,6 +44,8 @@
                     <td>{{ obj.patient }}</td>
                     <td>{{ obj.paid }}</td>
                     <td>{{ obj.outstanding }}</td>
+                    <td>obj.total</td>
+                    <td>{{obj.Invoice}}</td>
                     <td>{{ obj.total }}</td>
                     <td><a href="">Open Invoice</a></td>
                 </tr>
